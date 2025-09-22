@@ -1,0 +1,67 @@
+/* General layout */
+.container {
+    padding: 20px;
+  }
+  
+  .responsive-plot {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .responsive-plot {
+      height: 300px;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
+  /* Custom navbar styles */
+  .navbar-default {
+    background-color: orange;
+    border-color: orange;
+  }
+  
+  .navbar-default .navbar-brand,
+  .navbar-default .navbar-nav > li > a {
+    color: black !important;
+    font-weight: bold;
+  }
+  
+  .navbar-default .navbar-nav > li > a:hover {
+    background-color: #e67300; /* darker orange */
+    color: white !important;
+  }
+
+  .img-thumbnail {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  
+  .gallery-img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
